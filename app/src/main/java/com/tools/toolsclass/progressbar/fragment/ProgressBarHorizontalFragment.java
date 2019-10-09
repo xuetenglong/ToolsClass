@@ -1,5 +1,6 @@
 package com.tools.toolsclass.progressbar.fragment;
 
+import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,7 +44,25 @@ public class ProgressBarHorizontalFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_progress_bar, container, false);
         mUnbinder = ButterKnife.bind(this, view);
-        new Thread() {
+        try {
+            progressBarHorizontal.setMax(100);
+            ValueAnimator va = ValueAnimator.ofInt(0, 80);
+            va.setDuration(500);
+            va.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                @Override
+                public void onAnimationUpdate(ValueAnimator animation) {
+                    progressBarHorizontal.setProgress((int) animation.getAnimatedValue());
+                }
+            });
+            va.start();
+        } catch (Exception e) {
+
+        }
+
+
+
+
+    /*    new Thread() {
             @Override
             public void run() {
                 int i = 0;
@@ -57,7 +76,7 @@ public class ProgressBarHorizontalFragment extends Fragment {
                     progressBarHorizontal.setProgress(i);
                 }
             }
-        }.start();
+        }.start();*/
 
         return view;
     }
