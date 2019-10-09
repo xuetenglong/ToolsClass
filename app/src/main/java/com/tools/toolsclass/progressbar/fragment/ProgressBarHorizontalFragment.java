@@ -60,8 +60,6 @@ public class ProgressBarHorizontalFragment extends Fragment {
         }
 
 
-
-
     /*    new Thread() {
             @Override
             public void run() {
