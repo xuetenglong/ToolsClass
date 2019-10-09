@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--  工具入口-->
+        <activity android:name=".ToolsEntryActivity" />
+
+
     </application>
 
 </manifest>
