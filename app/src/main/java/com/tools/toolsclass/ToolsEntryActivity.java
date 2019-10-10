@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.tools.toolsclass.progressbar.activity.ProgressBarActivity;
+import com.tools.toolsclass.waveview.WaveViewActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
@@ -20,6 +21,10 @@ public class ToolsEntryActivity extends AppCompatActivity {
     @BindView(R.id.tv_horizontal_progress_bar)
     TextView tv_horizontal_progress_bar;
 
+    @BindView(R.id.tv_waveView)
+    TextView tv_waveView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +33,14 @@ public class ToolsEntryActivity extends AppCompatActivity {
     }
 
 
-    @OnClick(R.id.tv_horizontal_progress_bar)
+    @OnClick({R.id.tv_horizontal_progress_bar, R.id.tv_waveView})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_horizontal_progress_bar: //进度条相关
                 startActivity(new Intent(this, ProgressBarActivity.class));
+                break;
+            case R.id.tv_waveView: //水波纹相关
+                startActivity(new Intent(this, WaveViewActivity.class));
                 break;
         }
     }

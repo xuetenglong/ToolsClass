@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:background="@mipmap/icon_wave_bg"
+    tools:context=".waveview.WaveViewActivity">
+
+
+    <com.tools.toolsclass.waveview.customview.stopWaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        wave:above_wave_color="#dfe2e6"
+        wave:blow_wave_color="#51dfe2e6"
+        wave:progress="80"
+        wave:use_default_alpha="false"
+        wave:wave_height="little"
+        wave:wave_hz="normal"
+        wave:wave_length="middle"
+        wave:wave_style="stop" />
+
+</LinearLayout>
