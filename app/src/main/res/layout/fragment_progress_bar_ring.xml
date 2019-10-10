@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp">
 
@@ -18,22 +19,22 @@
         app:circle_progress_text_bold="true"
         app:circle_progress_text_color="#111A38"
         app:circle_progress_text_size="18dp"
-        app:circle_progress_width="8dp" />
+        app:circle_progress_width="6dp" />
 
 
     <!--  app:front_color1="#40d5fa"
         app:front_color2="#3c9df5"-->
     <com.tools.toolsclass.progressbar.customview.RingProgressBar
-        android:layout_marginTop="20dp"
         android:id="@+id/ringProgressBar"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         app:back_color="@android:color/white"
-        app:back_width="5dp"
+        app:back_width="6dp"
         app:front_color1="#E7F1FF"
         app:front_color2="@color/c5293f5"
-        app:front_width="5dp"
+        app:front_width="6dp"
         app:is_need_content="true"
         app:is_need_unit="false"
         app:total_engle="360" />

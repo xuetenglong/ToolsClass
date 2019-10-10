@@ -58,7 +58,7 @@ public class CircleProgressView extends View {
     private void init(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressView);
         mProgressBgColor = typedArray.getColor(R.styleable.CircleProgressView_circle_progress_bg_color, ContextCompat.getColor(getContext(), R.color.cf8f8f8));
-        mProgressWidth = typedArray.getDimensionPixelOffset(R.styleable.CircleProgressView_circle_progress_width, dp2px(context, 4));
+        mProgressWidth = typedArray.getDimensionPixelOffset(R.styleable.CircleProgressView_circle_progress_width, dipToPx(4));
         int colorStart = typedArray.getColor(R.styleable.CircleProgressView_circle_progress_color_start, ContextCompat.getColor(getContext(), R.color.c5293f5));
         int colorEnd = typedArray.getColor(R.styleable.CircleProgressView_circle_progress_color_end, -1);
         if (colorEnd == -1) {
@@ -67,7 +67,7 @@ public class CircleProgressView extends View {
             mProgressColors = new int[]{colorStart, colorEnd};
         }
         mTextColor = typedArray.getColor(R.styleable.CircleProgressView_circle_progress_text_color, ContextCompat.getColor(getContext(), R.color.c5293f5));
-        mTextSize = typedArray.getDimensionPixelOffset(R.styleable.CircleProgressView_circle_progress_text_size, dp2px(getContext(), 16));
+        mTextSize = typedArray.getDimensionPixelOffset(R.styleable.CircleProgressView_circle_progress_text_size, dipToPx(16));
         mTextIsBold = typedArray.getBoolean(R.styleable.CircleProgressView_circle_progress_text_bold, false);
         typedArray.recycle();
     }
@@ -215,6 +215,13 @@ public class CircleProgressView extends View {
             mAnimator.cancel();
         }
     }
+
+    private int dipToPx(float dip) {
+        float density = getContext().getResources().getDisplayMetrics().density;
+        return (int) (dip * density + 0.5f * (dip >= 0 ? 1 : -1));
+    }
+
+
 
     public static int dp2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
