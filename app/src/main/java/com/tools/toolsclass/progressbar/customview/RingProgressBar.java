@@ -57,7 +57,7 @@ public class RingProgressBar extends View {
     private final int DEGREE_PROGRESS_DISTANCE = dipToPx(3);
     private String mStringUnit;
 
-    private String bgArcColor = "#EBEFF2";
+    private String bgArcColor = "#EBEFF2";//#F8F8F8    #EBEFF2
 
 
     private boolean isNeedContent;

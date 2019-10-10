@@ -108,4 +108,27 @@
         <attr name="is_iconType" format="boolean" />
     </declare-styleable>
 
+
+
+
+
+
+
+    <declare-styleable name="CircleProgressView">
+        <!--进度条宽度-->
+        <attr name="circle_progress_width" format="dimension" />
+        <!--进度条底色-->
+        <attr name="circle_progress_bg_color" format="color" />
+        <!--进度条开始颜色-->
+        <attr name="circle_progress_color_start" format="color" />
+        <!--进度条结束颜色-->
+        <attr name="circle_progress_color_end" format="color" />
+        <!--进度文字大小-->
+        <attr name="circle_progress_text_size" format="dimension" />
+        <!--进度文字颜色-->
+        <attr name="circle_progress_text_color" format="color" />
+        <!--进度文字是否粗体-->
+        <attr name="circle_progress_text_bold" format="boolean" />
+    </declare-styleable>
+
 </resources>

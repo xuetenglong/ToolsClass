@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.tools.toolsclass.R;
+import com.tools.toolsclass.progressbar.customview.CircleProgressView;
 import com.tools.toolsclass.progressbar.customview.RingProgressBar;
 
 import androidx.annotation.NonNull;
@@ -22,8 +23,13 @@ public class ProgressBarRingFragment extends Fragment {
 
     private Unbinder mUnbinder;
 
+    @BindView(R.id.circleprogressBar)
+    CircleProgressView circleprogressBar;
+
+
     @BindView(R.id.ringProgressBar)
     RingProgressBar ringProgressBar;
+
 
     public static ProgressBarRingFragment newInstance() {
         return new ProgressBarRingFragment();
@@ -34,6 +40,11 @@ public class ProgressBarRingFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_progress_bar_ring, container, false);
         mUnbinder = ButterKnife.bind(this, view);
+
+        circleprogressBar.setMax(100);
+        circleprogressBar.setCurrent(75);
+        circleprogressBar.startAnimProgress(75,1000);
+
 
         ringProgressBar.setMaxValues(100);
         ringProgressBar.setCurrentValues(80);
