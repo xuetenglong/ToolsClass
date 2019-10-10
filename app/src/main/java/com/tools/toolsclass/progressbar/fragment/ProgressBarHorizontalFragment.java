@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.tools.toolsclass.R;
 
@@ -42,7 +41,7 @@ public class ProgressBarHorizontalFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_progress_bar, container, false);
+        View view = inflater.inflate(R.layout.fragment_progress_bar_horizontal, container, false);
         mUnbinder = ButterKnife.bind(this, view);
         try {
             progressBarHorizontal.setMax(100);
@@ -58,7 +57,6 @@ public class ProgressBarHorizontalFragment extends Fragment {
         } catch (Exception e) {
 
         }
-
 
     /*    new Thread() {
             @Override

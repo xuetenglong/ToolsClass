@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="60dp"
+    android:orientation="vertical">
+
+
+    <com.tools.toolsclass.progressbar.customview.RingProgressBar
+        android:id="@+id/ringProgressBar"
+        android:layout_width="@dimen/ringProgressBar_width"
+        android:layout_height="@dimen/ringProgressBar_width"
+        android:layout_centerInParent="true"
+        app:back_color="@android:color/white"
+        app:back_width="5dp"
+        app:front_color1="#40d5fa"
+        app:front_color2="#3c9df5"
+        app:front_width="5dp"
+        app:is_need_content="true"
+        app:is_need_unit="false"
+        app:total_engle="360" />
+</LinearLayout>

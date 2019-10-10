@@ -3,8 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+    <!-- 水平进度条-->
     <FrameLayout
-        android:id="@+id/fragment_progress_bar"
+        android:padding="40dp"
+        android:id="@+id/fragment_progress_bar_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
+
+
+
+    <!-- 环形进度条-->
+    <FrameLayout
+        android:padding="40dp"
+        android:id="@+id/fragment_progress_bar_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
 </FrameLayout>
