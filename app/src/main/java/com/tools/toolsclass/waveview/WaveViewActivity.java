@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 import com.tools.toolsclass.R;
 
+/**
+ * 水波纹效果
+ */
 public class WaveViewActivity extends AppCompatActivity {
 
     @Override

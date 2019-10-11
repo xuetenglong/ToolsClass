@@ -9,24 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
+        <activity android:name=".viewanimation.ViewAnimationActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 工具入口 -->
-        <activity android:name=".ToolsEntryActivity" />
-
-        <!-- 进度条 -->
-        <activity android:name=".progressbar.activity.ProgressBarActivity" />
-
-        <!-- 水波纹 -->
-        <activity android:name=".waveview.WaveViewActivity"></activity>
+        </activity> <!-- 工具入口 -->
+        <activity android:name=".ToolsEntryActivity" /> <!-- 进度条 -->
+        <activity android:name=".progressbar.activity.ProgressBarActivity" /> <!-- 水波纹 -->
+        <activity android:name=".waveview.WaveViewActivity" />
     </application>
 
 </manifest>

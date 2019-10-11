@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.tools.toolsclass.progressbar.activity.ProgressBarActivity;
+import com.tools.toolsclass.viewanimation.ViewAnimationActivity;
 import com.tools.toolsclass.waveview.WaveViewActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,10 @@ public class ToolsEntryActivity extends AppCompatActivity {
     @BindView(R.id.tv_waveView)
     TextView tv_waveView;
 
+    @BindView(R.id.tv_descView)
+    TextView tv_descView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +38,7 @@ public class ToolsEntryActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.tv_horizontal_progress_bar, R.id.tv_waveView})
+    @OnClick({R.id.tv_horizontal_progress_bar, R.id.tv_waveView,R.id.tv_descView})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_horizontal_progress_bar: //进度条相关
@@ -41,6 +46,9 @@ public class ToolsEntryActivity extends AppCompatActivity {
                 break;
             case R.id.tv_waveView: //水波纹相关
                 startActivity(new Intent(this, WaveViewActivity.class));
+                break;
+            case R.id.tv_descView: //水波纹相关
+                startActivity(new Intent(this, ViewAnimationActivity.class));
                 break;
         }
     }
