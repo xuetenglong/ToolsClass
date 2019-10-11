@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".viewanimation.ViewAnimationActivity">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewanimation.ViewAnimationActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <TextView
+        android:id="@+id/tv_up_disappear"
+        android:padding="6dp"
+        android:text="小球上滑动向下消失，下滑和停留2秒出来"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_right_disappear"
+        android:padding="6dp"
+        android:text="小球上滑动向右边消失，下滑和停留2秒出来"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_descView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content" />
 
 
-        <com.tools.toolsclass.viewanimation.customview.DescView
-            android:id="@+id/descView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="#dfe2e6" />
 
 
-    </LinearLayout>
 
+
+
+
+</LinearLayout>
 </ScrollView>
