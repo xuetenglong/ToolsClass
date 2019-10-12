@@ -9,30 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".expandable.CustomExpandableTextViewActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- 工具入口 -->
-        <activity android:name=".ToolsEntryActivity" />
-        <!-- 进度条 -->
-        <activity android:name=".progressbar.activity.ProgressBarActivity" />
-        <!-- 水波纹 -->
-        <activity android:name=".waveview.WaveViewActivity" />
-
-        <!--动画view  -->
-        <activity android:name=".viewanimation.ViewAnimationActivity"></activity>
-
-        <!-- 小球上滑动向下消失，下滑和停留2秒出来 -->
-        <activity android:name=".viewanimation.UpDisappearAnimationActivity"></activity>
-
-        <!-- 小球上滑动向右边消失，下滑和停留2秒出来 -->
-        <activity android:name=".viewanimation.RightDisappearAnimationActivity"></activity>
-
+        </activity> <!-- 工具入口 -->
+        <activity android:name=".ToolsEntryActivity" /> <!-- 进度条 -->
+        <activity android:name=".progressbar.activity.ProgressBarActivity" /> <!-- 水波纹 -->
+        <activity android:name=".waveview.WaveViewActivity" /> <!-- 动画view -->
+        <activity android:name=".viewanimation.ViewAnimationActivity" /> <!-- 小球上滑动向下消失，下滑和停留2秒出来 -->
+        <activity android:name=".viewanimation.UpDisappearAnimationActivity" /> <!-- 小球上滑动向右边消失，下滑和停留2秒出来 -->
+        <activity android:name=".viewanimation.RightDisappearAnimationActivity" /> <!-- 文本框内容清除 -->
+        <activity android:name=".clearedittext.ClearEditTextActivity" />
     </application>
 
 </manifest>

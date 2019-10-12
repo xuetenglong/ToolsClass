@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.tools.toolsclass.clearedittext.ClearEditTextActivity;
+import com.tools.toolsclass.expandable.CustomExpandableTextViewActivity;
 import com.tools.toolsclass.progressbar.activity.ProgressBarActivity;
 import com.tools.toolsclass.viewanimation.ViewAnimationActivity;
 import com.tools.toolsclass.waveview.WaveViewActivity;
@@ -28,6 +30,8 @@ public class ToolsEntryActivity extends AppCompatActivity {
     @BindView(R.id.tv_descView)
     TextView tv_descView;
 
+    @BindView(R.id.comment_expandable_view)
+    TextView comment_expandable_view;
 
 
     @Override
@@ -38,7 +42,8 @@ public class ToolsEntryActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.tv_horizontal_progress_bar, R.id.tv_waveView,R.id.tv_descView})
+    @OnClick({R.id.tv_horizontal_progress_bar, R.id.tv_waveView, R.id.tv_descView,
+            R.id.tv_clearEditText, R.id.comment_expandable_view})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_horizontal_progress_bar: //进度条相关
@@ -50,6 +55,13 @@ public class ToolsEntryActivity extends AppCompatActivity {
             case R.id.tv_descView: //水波纹相关
                 startActivity(new Intent(this, ViewAnimationActivity.class));
                 break;
+            case R.id.tv_clearEditText: //清除文本框类容
+                startActivity(new Intent(this, ClearEditTextActivity.class));
+                break;
+            case R.id.comment_expandable_view: //文本展开收起
+                startActivity(new Intent(this, CustomExpandableTextViewActivity.class));
+                break;
+
         }
     }
 

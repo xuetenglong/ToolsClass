@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clearedittext.ClearEditTextActivity">
+
+
+    <com.tools.toolsclass.clearedittext.customview.ClearEditText
+        android:background="@color/colorAccent"
+        android:id="@+id/tv_clearEditText"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        android:layout_height="60dp" />
+
+
+</LinearLayout>

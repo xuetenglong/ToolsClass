@@ -12,7 +12,6 @@ android {
     }
 
 
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -26,8 +25,6 @@ android {
         }
     }
 }
-
-
 
 
 dependencies {
@@ -51,4 +48,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:${cfgs.retrofit}"
     implementation "com.squareup.retrofit2:adapter-rxjava2:${cfgs.retrofit}"
     implementation "com.squareup.okhttp3:logging-interceptor:${cfgs.okhttp}"
+
+
+    // implementation 'com.tencent:mmkv:1.0.17'
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".expandable.CustomExpandableTextViewActivity">
+
+
+
+    <com.tools.toolsclass.expandable.customview.CustomExpandableTextView
+        android:id="@+id/comment_expandable_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="9dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="9dp"
+        android:text="简介：“你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不你最喜欢的产品是什么？”这些问题也类似于“改进产品”，只不过方法是相反的；不是让你谈论这个产品有什么问题，而是讨论你为什么喜欢这个产品。其实是…谈…"
+        app:collapseDrawable="@mipmap/active_icon_close_arrow"
+        app:collapseText="收起"
+        app:contentLineSpacingMultiplier="1.2"
+        app:contentTextColor="#111A38"
+        app:contentTextSize="14sp"
+        app:expandCollapseTextColor="#ff5293f5"
+        app:expandCollapseTextSize="14dp"
+        app:expandDrawable="@mipmap/active_icon_open_arrow"
+        app:expandText="全部展开"
+        app:maxCollapsedLines="3" />
+
+</LinearLayout>

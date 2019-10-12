@@ -86,6 +86,9 @@
         <attr name="waves_radius_bottom_right" format="dimension" />
     </declare-styleable>
 
+
+
+
     <declare-styleable name="RingProgressBar">
         <attr name="back_color" format="color" />
         <attr name="front_color1" format="color" />
@@ -166,5 +169,28 @@
     <declare-styleable name="Themes">
         <attr name="waveViewStyle" format="reference"/>
     </declare-styleable>
+
+
+
+
+    <declare-styleable name="CustomExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="contentTextColor" format="color" />
+        <attr name="contentLineSpacingMultiplier" format="float" />
+        <attr name="expandDrawable" format="reference" />
+        <attr name="expandText" format="string" />
+        <attr name="collapseDrawable" format="reference" />
+        <attr name="collapseText" format="string" />
+        <attr name="expandCollapseTextSize" format="dimension" />
+        <attr name="expandCollapseTextColor" format="color" />
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
 
 </resources>
